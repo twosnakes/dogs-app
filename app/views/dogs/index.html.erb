@@ -1,0 +1,12 @@
+<% @dogs.each do |dog| %>
+  <div>
+    <h2>Name: <a href="/dogs/<%= dog.id %>"> <%= dog.name %> Age: <%= dog.age %></a></h2>
+  </div>
+  <div>
+    <img src="<%= dog.image %>">
+  </div>
+  <div>
+  <h3>Species: <%= dog.species %></h3>
+    
+  </div>
+<% end %>
